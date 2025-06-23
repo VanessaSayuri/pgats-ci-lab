@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22.x
-          
+
       # instalação do Yarn
       - name: Instalando Yarn
         run: npm install -g yarn
@@ -35,9 +35,9 @@ jobs:
       - name: Instalando dependencias
         run: yarn
 
-      # instalação do playright
-      - name: Instalando playright
-        run: yarn playright install
+      # instalação do playwright
+      - name: Instalando playwright
+        run: yarn playwright install
 
       # executar os testes e2e
       - name: Executando Testes e2e
