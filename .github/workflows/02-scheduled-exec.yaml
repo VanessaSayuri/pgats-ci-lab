@@ -9,19 +9,18 @@ name: 'Execução Agendada'
 
 on:
   schedule:
-  - cron: '0 6 * * 4'
+    - cron: '0 6 * * 4'
 
 # trabalhos/ tarefas dentro do pipeline = jobs
 jobs:
   e2e-tests:
-
     # maquina que o job vai executar
     runs-on: ubuntu-latest
 
     #passos do script de build
     steps:
       # clone do projeto
-      - uses: actions/checkout@v4 
+      - uses: actions/checkout@v4
 
       # instalação do node
       - uses: actions/setup-node@v4
